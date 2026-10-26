@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart EV Charging Hub</title>
+<meta name="description" content="A smarter, simpler way to plan EV charging with live availability and advance slot booking.">
+<style>
+:root{--green:#12b886;--dark:#10231f;--muted:#5c706a;--pale:#e9fbf4;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);line-height:1.6;background:#f8fcfa}
+header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;background:#fff;border-bottom:1px solid #e6efeb}
+.brand{font-weight:800;font-size:1.1rem;display:flex;gap:10px;align-items:center}.logo{background:var(--green);color:#fff;border-radius:10px;padding:7px 10px}
+nav a{color:var(--dark);text-decoration:none;margin-left:22px;font-size:.95rem}
+.hero{padding:76px 7%;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;background:linear-gradient(125deg,#e9fbf4,#f8fcfa)}
+.eyebrow{color:#087f5b;text-transform:uppercase;letter-spacing:2px;font-weight:700;font-size:.78rem}
+h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.06;margin:16px 0}h1 span{color:#099268}
+.lead{font-size:1.12rem;color:var(--muted);max-width:610px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:13px 19px;border-radius:9px;text-decoration:none;font-weight:700}
+.primary{background:var(--green);color:#fff}.secondary{border:1px solid #b6d6ca;color:var(--dark);background:#fff}
+.visual{background:#10231f;border-radius:24px;padding:25px;color:#fff;box-shadow:0 20px 50px #10231f20}
+.visual .screen{background:#fff;color:var(--dark);border-radius:15px;padding:20px}
+.status{display:flex;justify-content:space-between;align-items:center;font-size:.9rem}.dot{display:inline-block;width:9px;height:9px;background:var(--green);border-radius:50%;margin-right:7px}
+.slot{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #edf2ef}.available{color:#087f5b;font-size:.85rem;font-weight:700}
+section{padding:65px 7%}.section-title{text-align:center;max-width:700px;margin:0 auto 35px}.section-title h2{font-size:2rem;margin:8px 0}.section-title p{color:var(--muted)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{padding:24px;background:#fff;border:1px solid #e6efeb;border-radius:16px}.emoji{font-size:1.8rem}.feature h3{margin:12px 0 6px}.feature p{color:var(--muted);margin:0}
+.how{background:#fff}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{padding:20px;border-left:3px solid var(--green);background:#f8fcfa}.num{font-weight:800;color:#099268}
+.cta{background:var(--dark);color:#fff;text-align:center;padding:58px 7%}.cta p{color:#d1e3dc;max-width:650px;margin:0 auto 22px}.cta h2{font-size:2.1rem;margin:0 0 10px}
+footer{padding:25px 7%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+@media(max-width:760px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:50px}.features,.steps{grid-template-columns:1fr}section{padding:48px 6%}header{padding:17px 6%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><span class="logo">⚡</span> Smart EV Charging Hub</div>
+  <nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow">Charge smarter. Travel easier.</div>
+    <h1>EV charging, <span>without the guesswork.</span></h1>
+    <p class="lead">Find charging availability, book a convenient time slot, and plan your journey with more confidence. A smarter charging experience designed for everyday EV drivers.</p>
+    <div class="actions"><a class="btn primary" href="#contact">Join the early-access list</a><a class="btn secondary" href="#features">Explore features</a></div>
+  </div>
+  <div class="visual">
+    <p style="margin:0 0 14px;font-weight:700">A preview of your charging experience</p>
+    <div class="screen">
+      <div class="status"><strong>Nearby charging hub</strong><span class="available"><span class="dot"></span>Availability preview</span></div>
+      <div class="slot"><span>Charger 01</span><span class="available">Available</span></div>
+      <div class="slot"><span>Charger 02</span><span style="color:#b7791f;font-weight:700;font-size:.85rem">Booked</span></div>
+      <div class="slot"><span>Charger 03</span><span class="available">Available</span></div>
+      <p style="font-size:.8rem;color:#5c706a;margin-bottom:0">Concept preview only — live charger data is not connected yet.</p>
+    </div>
+  </div>
+</section>
+<section id="features">
+  <div class="section-title"><div class="eyebrow">Why Smart EV Charging Hub?</div><h2>A more convenient way to charge</h2><p>Our planned web application connects drivers with a simpler, more organised charging experience.</p></div>
+  <div class="features">
+    <article class="feature"><div class="emoji">📍</div><h3>Find charging options</h3><p>View charging hub information in one easy-to-use place.</p></article>
+    <article class="feature"><div class="emoji">🕒</div><h3>Check availability</h3><p>See charger status when connected station data is available, helping reduce uncertainty.</p></article>
+    <article class="feature"><div class="emoji">📅</div><h3>Plan a time slot</h3><p>Book a suitable charging slot through the web app when booking is enabled.</p></article>
+  </div>
+</section>
+<section id="how" class="how">
+  <div class="section-title"><div class="eyebrow">Simple by design</div><h2>How it works</h2><p>Three simple steps toward a smoother charging stop.</p></div>
+  <div class="steps">
+    <div class="step"><div class="num">01 / FIND</div><h3>Choose a hub</h3><p>Explore charging location and station details.</p></div>
+    <div class="step"><div class="num">02 / CHECK</div><h3>View available slots</h3><p>Check current availability and select a suitable time, subject to system support.</p></div>
+    <div class="step"><div class="num">03 / CHARGE</div><h3>Arrive with a plan</h3><p>Follow your booking details and enjoy a more organised charging experience.</p></div>
+  </div>
+</section>
+<section class="cta" id="contact">
+  <h2>Help shape the future of EV charging.</h2>
+  <p>Are you an EV driver, fleet operator, or potential partner in Rajamahendravaram? Share your interest and help us build a solution around real customer needs.</p>
+  <a class="btn primary" href="mailto:YOUR_EMAIL@example.com?subject=Smart%20EV%20Charging%20Hub%20Enquiry">Contact / Register interest</a>
+  <p style="font-size:.82rem;margin-top:16px">Before publishing, replace YOUR_EMAIL@example.com with your real contact email.</p>
+</section>
+</main>
+<footer><span>© 2026 Smart EV Charging Hub</span><span>Concept landing page · Live charging and booking systems are not yet connected.</span></footer>
+</body>
+</html>
